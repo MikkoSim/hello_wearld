@@ -1,7 +1,8 @@
 #include "stm32h7xx.h"
 
 void bad_delay(long time);
-void set_GPIO(void);
+void set_GPIO(void)
+void adc_function(void);
 void unset_GPIO();
 
 int main(void)
@@ -28,6 +29,10 @@ void set_GPIO(void){
 void bad_delay(long time){
 	long i = 0;
 	while (i < time) i++;
+}
+
+void adc_function(void){
+	//blaa blaa
 }
 
 void unset_GPIO(){
