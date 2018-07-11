@@ -7,7 +7,9 @@ int main(void)
 {
   set_GPIO();
 	while (1){
-		uart4_sends("Works!\n");
+		GPIOG -> BSRRL |= GPIO_BSRR_BS_0;
+		bad_delay(1000000);
+		GPIOG -> BSRRL |= GPIO_BSRR_BR_0;
 		bad_delay(1000000);
 	}
 }
