@@ -2,6 +2,7 @@
 
 void bad_delay(long time);
 void set_GPIO(void);
+void unset_GPIO();
 
 int main(void)
 {
@@ -27,4 +28,8 @@ void set_GPIO(void){
 void bad_delay(long time){
 	long i = 0;
 	while (i < time) i++;
+}
+
+void unset_GPIO(){
+	RCC -> AHB4ENR &= ~RCC_AHB4ENR_GPIOGEN;
 }
