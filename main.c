@@ -12,6 +12,7 @@ int main(void)
 		GPIOG -> BSRRL |= GPIO_BSRR_BR_0;
 		bad_delay(1000000);
 	}
+  unset_GPIO();
 }
 
 void set_GPIO(void){
