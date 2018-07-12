@@ -1,7 +1,8 @@
 #include "stm32h7xx.h"
 
 void bad_delay(long time);
-void set_GPIO(void)
+void set_GPIO(void);
+void liibalaaba(void);
 void adc_function(void);
 void unset_GPIO();
 
